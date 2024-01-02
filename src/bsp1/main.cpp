@@ -1,5 +1,14 @@
+#include "frequency_table.h"
 #include <iostream>
 
 int main () {
-   std::cout << "Assignment not implemented yet.\n";
+	// Datei öffnen, Frequenzen berechnen und ausgeben
+	FrequencyTable table;
+	table.readFile("Text2.txt");
+	table.calculateFrequencies();
+	table.printTable();
+
+
+
+
 }
