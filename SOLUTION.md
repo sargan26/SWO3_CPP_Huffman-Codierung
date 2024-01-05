@@ -4,7 +4,7 @@
 
 ### **Lösungsidee**
 
-## Datenstrukturen und Algorithmen
+#### Datenstrukturen und Algorithmen
 
 **FrequencyTable-Klasse**: Diese Klasse ist für das Einlesen eines Textes aus einer Datei zuständig. Sie erstellt eine Häufigkeitstabelle ('std::map<char, int>') für die Zeichen im Text und berechnet ihre relativen Häufigkeiten. Der eingelesene Text wird für die spätere Verarbeitung gespeichert.
 
@@ -14,7 +14,7 @@
 
 **Statistiken**: Die Methode 'encodeText' in der 'HuffmanTree'-Klasse berechnet und druckt Statistiken aus, wie die Länge des Originaltexts und des kodierten Texts sowie die Kompressionsrate.
 
-## Grundstruktur der Implementierung
+#### Grundstruktur der Implementierung
 
 **Hauptklassen**: 'FrequencyTable' und 'HuffmanTree'.
   - 'FrequencyTable' kümmert sich um das Einlesen des Textes und das Erstellen der Häufigkeitstabelle.
