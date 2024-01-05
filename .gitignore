@@ -1,10 +1,9 @@
 # User defined Files
-/out
-/BUILD
-/.vscode
+./out
+./BUILD
+./.vscode
 CppProperties.json
 CMakeLists.txt
-
 
 # Prerequisites
 *.d

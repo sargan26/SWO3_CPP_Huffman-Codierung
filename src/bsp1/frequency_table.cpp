@@ -2,6 +2,7 @@
 #include <fstream>
 #include <algorithm>
 #include <iostream>
+#include <string>
 
 void FrequencyTable::readFile(const std::string& filename) {
 	std::ifstream file(filename);
@@ -13,7 +14,14 @@ void FrequencyTable::readFile(const std::string& filename) {
 		frequencyMap[c]++;
 		totalChars++;
 		std::cout << c;
+		text += c;
 	}
+	if (totalChars == 0)
+	{
+		std::cerr << "FEHLER: Textdatei ist leer.";
+		EXIT_FAILURE;
+	}
+
 	std::cout << "\n\n";
 }
 
@@ -32,8 +40,10 @@ void FrequencyTable::calculateFrequencies() {
 void FrequencyTable::printTable() const {
 	std::cout << "Zeichen | Relative Häufigkeit (%)\n";
 	std::cout << "---------------------------------\n";
-	for (const auto & pair : frequencies)
-	{
-		std::cout << "   " << pair.first << "    | " << pair.second << "\n";
+	if (!frequencies.empty()) {
+		for (const auto& pair : frequencies)
+		{
+			std::cout << "   " << pair.first << "    | " << pair.second << "\n";
+		}
 	}
 }
